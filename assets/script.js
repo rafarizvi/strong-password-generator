@@ -1,7 +1,7 @@
 // Assignment Code
 const generateBtn = document.querySelector("#generate");
 
-//global variables.
+// Global variables.
 let number;
 
 
@@ -12,8 +12,8 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// generatePassword runs the length(), types(), and createPassword() functions.
-// the createPassword() function returns the final value.
+// GeneratePassword runs the length(), types(), and createPassword() functions.
+// The createPassword() function returns the final value.
 function generatePassword() {
   
   length();
@@ -35,7 +35,11 @@ function length() {
 
 }
 
-//asks user to select character types.
+// Asks user to select character types. 
+// If at least one character type is not selected, the function loops.
+// based on the users selection, random values from specific character type arrays are
+// pushed into a a single array where random values are chosen until
+// the desired password length is matched. 
 function types() {
 
   let lowercase;
@@ -46,6 +50,7 @@ function types() {
   let passwordArr2 = [];
   let password1 = '';
 
+  // Asks user if lowercase letters need to be included.
   lowercase = confirm ('Include lowercase?');
   if (lowercase) {
     
@@ -58,7 +63,7 @@ function types() {
     }   
   }
 
-
+  // asks user if uppercase letters need to be included.
   uppercase = confirm ('Include uppercase?');
   if (uppercase) {
     
@@ -71,7 +76,7 @@ function types() {
     }
   }
 
-
+  // asks user if numbers need to be included.
   numeric = confirm ('Include numbers?');
   if (numeric) {
     
@@ -83,7 +88,7 @@ function types() {
     }
   }
 
-  
+  // Asks user if special characters need to be included.
   specialCharacters = confirm ('Include special characters?');
   if (specialCharacters) {
    
@@ -95,7 +100,7 @@ function types() {
     }
   }
 
-
+  // Validates response. If no selection is made, the function loops.
   if (!lowercase && !uppercase && !numeric && !specialCharacters) {
     alert ('Choose at least one character type!')
     return types();
