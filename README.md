@@ -5,7 +5,7 @@
 The goal if this project is to randomly generate a strong password. When clicked on the generate password button the user is prompted to enter a desired password length from 8-128. After the user inputs a valid number, a series of confirm messages requests the selection of character types such as uppercase alphabets, lowercase alphabets, numbers, and special characters. Next, a random password is generated and presented to the user.
 
 ## Link to webpage
-
+https://rafarizvi.github.io/strong-password-generator/
 
 ## Installation
 
