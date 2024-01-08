@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-This is a random password generating website. It allows users to click a button and presents a prompt and a series of confirms to determine the use requirements for the password. Users can simply re-click the "generate password" button to generate a new password.
+This is a random password generating website. It allows users to click a button and presents a prompt and a series of confirms to determine the user requirements for the password. Users can simply re-click the "generate password" button to generate a new password.
 
 ![screenshot of password generator webpage](assets/images/webpage-screen-shot.png)
 
